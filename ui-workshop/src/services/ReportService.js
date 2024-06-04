@@ -8,9 +8,9 @@ function GetReportList() {
     },
     {
       reportId: 2,
-      reportName: "Driver List",
+      reportName: "Annual Review Of Driving Records",
       serviceId: 1,
-      description: "Driver List datat for the client",
+      description: "Annual Review Of Driving Records for the client",
     },
     {
       reportId: 3,

@@ -46,6 +46,7 @@ const DQEmployeeList = () => {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   const validate = () => {
     const newErrors = {};
@@ -86,11 +87,9 @@ const DQEmployeeList = () => {
     setOpen(false);
   };
 
-  const navigate = useNavigate();
   const handleCancel = (event) => {
     event.preventDefault();
-    // navigate(-1, { replace: true });
-    navigate("/Reports");
+    navigate(-1);
   };
 
   return (

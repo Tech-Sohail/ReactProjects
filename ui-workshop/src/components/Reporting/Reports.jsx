@@ -9,6 +9,14 @@ function Reports() {
   const services = GetServices();
   const reports = GetReportList();
 
+  if (chipClicked === 0) {
+    var defaultServiceId = services[0]?.serviceId;
+    setChipClicked(defaultServiceId);
+    setReportList(
+      reports.filter((report) => report.serviceId === defaultServiceId)
+    );
+  }
+
   const handleChipClick = (chipId) => {
     setChipClicked(chipId);
     setReportList(reports.filter((report) => report.serviceId === chipId));

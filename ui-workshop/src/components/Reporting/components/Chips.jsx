@@ -14,7 +14,6 @@ function Chips(props) {
               ? "secondary"
               : "primary"
           }
-          clickable="true"
           onClick={() => props?.handleChipClick(service.serviceId)}
         />
       ))}

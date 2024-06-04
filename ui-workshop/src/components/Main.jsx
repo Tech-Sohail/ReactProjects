@@ -2,7 +2,7 @@ import React from "react";
 import Reports from "./Reporting/Reports";
 import { Routes, Route, Link } from "react-router-dom";
 import EmployeeList from "./Reporting/ReportPages/EmployeeList";
-import DQCompliance from "./Reporting/ReportPages/DQCompliance";
+import AnnualReviewOfDrivingRecords from "./Reporting/ReportPages/AnnulReviewOfDrivingRecords";
 import DriverList from "./Reporting/ReportPages/DriverList";
 
 function Main() {
@@ -12,7 +12,7 @@ function Main() {
       <Routes>
         <Route path="/" element={<Reports />} />
         <Route path="/report/1/1" element={<EmployeeList />} />
-        <Route path="/report/1/2" element={<DriverList />} />
+        <Route path="/report/1/2" element={<AnnualReviewOfDrivingRecords />} />
       </Routes>
     </div>
   );
